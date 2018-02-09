@@ -1,0 +1,306 @@
+    html {
+        background-size: cover;
+        max-height: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    body {
+        background-color: transparent;
+        font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+        color: #777777;
+    }
+
+    h1 {
+        background-color: #4aaaa5;
+        display: inline-block;
+        padding: 25px;
+        font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+        font-size: 1.6em;
+        height: 97px;
+        line-height: 48px;
+    }
+
+    h2,
+    h3 {
+        color: #4aaaa5;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 40px 30px 20px 30px;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        margin: 20px 30px;
+    }
+
+    p {
+        margin: 0 30px;
+        font-size: 1.1em;
+        line-height: 24pt;
+    }
+
+    hr {
+        background-color: #dddddd;
+        border: none;
+        height: 3px;
+        margin: 20px 30px;
+    }
+
+    a,
+    .main-nav a {
+        text-decoration: none;
+        color: #777777;
+        font-weight: bold;
+    }
+    .social-nav img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-nav .nav-link {
+        padding: 5px;
+    }
+
+    .portfolio-module {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+
+    .portfolio-title {
+        position: relative;
+        line-height: 55px;
+        width: 100%;
+    }
+
+    .portfolio-title a {
+        display: inline-block;
+        background-color: #4aaaa5;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        height: 55px;
+        width: 100%;
+        color: #ffffff;
+        font-size: 1.1em;
+    }
+
+    .portfolio-module img {
+        max-width: 275px;
+        max-height: 183px;
+        width: 100%;
+    }
+    .container {
+        max-width: 960px;
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        height: 100%;
+        display: inline;
+        color: #777777;
+    }
+
+    header {
+        border-bottom: #cccccc solid 3px;
+    }
+
+    .module {
+        border: #dddddd solid 1px;
+    }
+
+    .middle:after {
+        content: "";
+        display: block;
+        height: 100px;
+}
+
+    footer {
+        position: absolute!important;
+        background-color: #666666;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: #4aaaa5 solid 10px;
+    }
+
+    footer p {
+        font-size: 1.2em;
+        line-height: 70px;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    img.float-left {
+        margin: 10px 20px 10px 30px;
+    }
+
+    img.float-right {
+        margin: 10px 30px 10px 20px;
+    }
+
+    img.landscape {
+        max-width: 338px;
+    }
+
+    img.portrait {
+        max-height: 338px;
+    }
+
+    form {
+        padding: 30px;
+        font-size: 1.1em!important;
+    }
+
+    input,
+    textarea {
+        border: #dddddd solid 1px!important;
+        font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif!important;
+        padding: 10px!important;
+    }
+
+    textarea {
+        min-height: 200px!important;
+        max-height: 300px;
+    }
+
+    .submit {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        font-size: 14px!important;
+        padding: 10px 25px!important;
+        background-color: #4aaaa5;
+        color: #ffffff;
+        border: none!important;
+    }
+
+
+    /* media-queries */
+
+    @media screen and (max-width: 992px) {
+        h3 {
+            font-size: 1.1em;
+        }
+        .side {
+            margin-left: 0!important;
+        }
+        .portfolio-module img {
+            max-width: 100%;
+            max-height: none;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .col-sm-12 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .sidebar {
+            margin-top: 50px!important;
+        }
+        img.float-left {
+            float: none!important;
+        }
+        img.landscape {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto 30px auto;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+
+    @media screen and (min-width: 575px) {
+        .navbar-light .navbar-nav {
+            margin-right: 10px!important;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        h1 {
+            width: 100%;
+            font-size: 7vw;
+        }
+        p {
+            font-size: 1em;
+        }
+        .toggle-holder {
+            display: block;
+            background-color: #dddddd;
+            margin: 5px auto;
+            border: solid 1px #4aaaa5;
+            border-radius: 5px;
+        }
+        .navbar-light .navbar-nav {
+            margin-top: 5px!important;
+        }
+        .navbar-light .navbar-nav .nav-item {
+            margin-left: 0!important;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            display: inline-block;
+            height: auto;
+            width: 100%;
+            margin: 0!important;
+            padding: 10px 0!important;
+            border-radius: 20px;
+        }
+        
+        img.float-right {
+            float: none!important;
+        }
+        img.portrait {
+            max-height: none;
+            max-width: 100%;
+            width: 100%;
+            display: block;
+            margin: 0 auto 30px auto;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        p {
+            font-size: .9em;
+            line-height: 20pt;
+        }
+        footer p {
+            font-size: 4vw;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .portfolio-title {
+            line-height: 27px;
+        }
+        .portfolio-title a {
+            height: 25px;
+            bottom: 5px;
+            font-size: .7em;
+        }
+
+    }
